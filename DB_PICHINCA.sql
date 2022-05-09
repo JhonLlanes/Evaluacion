@@ -11,7 +11,7 @@ CREATE TABLE cuenta (
     cuen_id           SERIAL NOT NULL,
     numero_cuenta     VARCHAR(20) NOT NULL,
     tipo_cuenta       VARCHAR(20) NOT NULL,
-    saldo_inicial     NUMERIC(5,2) NOT NULL,
+    saldo_inicial     NUMERIC(10,2) NOT NULL,
     estado            VARCHAR(15) NOT NULL,
     cliente_clie_id   INTEGER NOT NULL
 );
@@ -22,8 +22,8 @@ CREATE TABLE movimientos (
     mov_id            SERIAL NOT NULL,
     fecha             DATE NOT NULL,
     tipo_movimiento   VARCHAR(30) NOT NULL,
-    valor             NUMERIC(5,2) NOT NULL,
-    saldo             NUMERIC(5,2) NOT NULL,
+    valor             NUMERIC(10,2) NOT NULL,
+    saldo             NUMERIC(10,2) NOT NULL,
     cuenta_cuen_id    INTEGER NOT NULL
 );
 

@@ -1,5 +1,6 @@
 package ec.fin.pichincha.EjercicioFullstack.logica;
 
+import ec.fin.pichincha.EjercicioFullstack.model.Cuenta;
 import ec.fin.pichincha.EjercicioFullstack.model.FrameOut;
 import ec.fin.pichincha.EjercicioFullstack.model.Movimientos;
 import ec.fin.pichincha.EjercicioFullstack.repository.MovimientosRepository;
@@ -63,5 +64,6 @@ public class LogicaDeposito {
 
     return null;
     }
+
 
 }

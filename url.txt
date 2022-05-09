@@ -1,0 +1,5 @@
+http://localhost:8080/api/movimientos/reporte/3000123456:2022-05-09:2022-05-09
+
+http://localhost:8080/api/movimientos/reporte2/2022-05-09:2022-05-09:true
+
+http://localhost:8080/swagger-ui/#/

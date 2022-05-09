@@ -6,6 +6,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Repository;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletResponse;
+
 
 @RequestMapping("/default")
 public interface IServicioMovimientos  {
@@ -16,6 +18,12 @@ public interface IServicioMovimientos  {
 
     @GetMapping("/listar/{id}")
     public ResponseEntity<?> listar(@PathVariable Long id);
+
+    @GetMapping("/reporte/{data}")
+    public ResponseEntity<?> reporteFechas(@PathVariable String data, HttpServletResponse response);
+
+    @GetMapping("/reporte2/{data}")
+    public ResponseEntity<?> reporteFechasCliente(@PathVariable String data, HttpServletResponse response);
 
     @DeleteMapping("/eliminar")
     public ResponseEntity<?> eliminar(@RequestBody Movimientos movimientos);
